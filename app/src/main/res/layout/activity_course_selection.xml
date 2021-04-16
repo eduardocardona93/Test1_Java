@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CourseSelectionActivity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/totalFeesLabel"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insuranceChk" />
+
+    <TextView
+        android:id="@+id/totalHoursLbl"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:text="@string/hoursNumericPlaceholder"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/totalFeesLbl" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/totalHoursLabel"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/totalFeesLbl"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="26dp"
+        android:gravity="end"
+        android:text="@string/moneyNumericPlaceholder"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/insuranceChk" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/coursesSelectionLabel"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/studentGradeLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="269dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <RadioButton
+            android:id="@+id/undergradeRb"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/undergraduatedLabel" />
+
+        <RadioButton
+            android:id="@+id/graduateRb"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/graduatedLabel" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/courseSpLbl"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/courseLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Spinner
+        android:id="@+id/courseSp"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toEndOf="@+id/courseSpLbl"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/courseFeesLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseSp" />
+
+    <TextView
+        android:id="@+id/courseFeesLbl"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="37dp"
+        android:gravity="end"
+        android:text="@string/moneyNumericPlaceholder"
+        android:textColor="#4CAF50"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/courseSp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="180dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/courseHoursLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/courseHoursLbl"
+        android:layout_width="84dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp"
+        android:gravity="end"
+        android:text="@string/hoursNumericPlaceholder"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/courseFeesLbl" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/addLabel"
+        app:backgroundTint="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="90dp"
+        android:text="@string/optionsLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <CheckBox
+        android:id="@+id/insuranceChk"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/insuranceLabel"
+        app:layout_constraintStart_toEndOf="@+id/accomodationChk"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+    <CheckBox
+        android:id="@+id/accomodationChk"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/accomodationLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/logoutLabel"
+        app:backgroundTint="#F44336"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

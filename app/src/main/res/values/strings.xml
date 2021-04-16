@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Test1_Java</string>
+    <string name="userLabel">Username</string>
+    <string name="fullNameLabel">Student Full name</string>
+    <string name="password">Password</string>
+    <string name="loginButtonText">Log In</string>
+    <string name="college">International College</string>
+    <string name="coursesSelectionLabel">Courses Selection</string>
+    <string name="graduatedLabel">Graduated</string>
+    <string name="undergraduatedLabel">Undergraduated</string>
+    <string name="studentGradeLabel">Student Grade</string>
+    <string name="courseLabel">Course</string>
+    <string name="courseFeesLabel">Course Fees</string>
+    <string name="courseHoursLabel">Course Hours per week</string>
+    <string name="addLabel">Add</string>
+    <string name="totalHoursLabel">Total Hours</string>
+    <string name="totalFeesLabel">Total Fees</string>
+    <string name="optionsLabel">Options</string>
+    <string name="accomodationLabel">Accommodation</string>
+    <string name="insuranceLabel">Medical Insurance</string>
+    <string name="logoutLabel">Log out</string>
+    <string name="hoursNumericPlaceholder">99</string>
+    <string name="moneyNumericPlaceholder">$0000.00</string>
+    <string name="welcomeLabel">Welcome abcdefghijklmnopqrstuvwxyz</string>
 </resources>
